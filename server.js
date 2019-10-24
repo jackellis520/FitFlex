@@ -1,4 +1,7 @@
-requestAnimationFrame("dotenv").config();
+require("dotenv").config();
+
+
+//requestAnimationFrame("dotenv").config();
 var express = require("express");
 var session = require("express-session");
 var exphbs = require("express-handlebars");
@@ -9,6 +12,7 @@ var passport = require("./config/passport.js");
 
 var app = express();
 var PORT = process.env.PORT || 3000;
+
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
